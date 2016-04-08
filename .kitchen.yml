@@ -1,0 +1,24 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["forwarded_port", {guest: 80, host: 8000}]
+  customize:
+    memory: 1024
+
+provisioner:
+  name: chef_zero
+
+# Uncomment the following verifier to leverage Inspec instead of Busser (the
+# default verifier)
+# verifier:
+#   name: inspec
+
+platforms:
+  - name: debian/jessie64
+
+suites:
+  - name: default
+    run_list:
+      - recipe[raspberry::default]
+    attributes:

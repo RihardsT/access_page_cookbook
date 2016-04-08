@@ -1,0 +1,12 @@
+name 'raspberry'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures raspberry'
+long_description 'Installs/Configures raspberry'
+version '0.1.0'
+
+depends 'fail2ban'
+depends 'apt'
+depends 'application_ruby'
+depends 'poise-ruby'
