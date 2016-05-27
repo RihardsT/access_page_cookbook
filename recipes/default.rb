@@ -16,7 +16,6 @@ package 'ruby-dev'
 package 'build-essential'
 package 'git'
 package 'libsqlite3-dev'
-package 'libsqlite3-dev'
 package 'postgresql-server-dev-9.4'
 package 'nodejs'
 
